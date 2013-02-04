@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Descripci&oacuten:</b>
+  <%= @concepto.descripcion %>
+</p>
+
+<p>
+  <b>Es ingreso:</b>
+  <%= @concepto.es_ingreso %>
+</p>
+
+<p>
+  <b>Es egreso:</b>
+  <%= @concepto.es_egreso %>
+</p>
+
+
+<%= link_to 'Editar', edit_concepto_path(@concepto) %> |
+<%= link_to 'Conceptos', conceptos_path %>

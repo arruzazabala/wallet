@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  descripcion: MyString
+  es_ingreso: false
+  es_egreso: false
+
+two:
+  descripcion: MyString
+  es_ingreso: false
+  es_egreso: false

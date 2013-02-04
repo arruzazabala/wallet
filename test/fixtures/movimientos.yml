@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  concepto: 
+  mes: 1
+  anio: 1
+  monto: 1.5
+
+two:
+  concepto: 
+  mes: 1
+  anio: 1
+  monto: 1.5

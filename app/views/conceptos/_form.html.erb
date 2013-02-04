@@ -1,0 +1,29 @@
+<%= form_for(@concepto) do |f| %>
+  <% if @concepto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@concepto.errors.count, "error") %> no permiten que se guarde:</h2>
+
+      <ul>
+      <% @concepto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label 'Descripción' %><br />
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label 'Es ingreso?' %><br />
+    <%= f.check_box :es_ingreso %>
+  </div>
+  <div class="field">
+    <%= f.label 'Es egreso?' %><br />
+    <%= f.check_box :es_egreso %>
+  </div>
+  <div class="actions">
+    <%=submit_tag "Guardar" %>
+  </div>
+<% end %>

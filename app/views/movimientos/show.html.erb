@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Concepto:</b>
+  <%= @movimiento.concepto %>
+</p>
+
+<p>
+  <b>Mes:</b>
+  <%= @movimiento.mes %>
+</p>
+
+<p>
+  <b>Anio:</b>
+  <%= @movimiento.anio %>
+</p>
+
+<p>
+  <b>Monto:</b>
+  <%= @movimiento.monto %>
+</p>
+
+
+<%= link_to 'Edit', edit_movimiento_path(@movimiento) %> |
+<%= link_to 'Back', movimientos_path %>
