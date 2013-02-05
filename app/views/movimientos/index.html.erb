@@ -13,7 +13,7 @@
 
 <% @movimientos.each do |movimiento| %>
   <tr>
-    <td><%= movimiento.concepto %></td>
+    <td><%= movimiento.concepto.descripcion %></td>
     <td><%= movimiento.mes %></td>
     <td><%= movimiento.anio %></td>
     <td><%= movimiento.monto %></td>

@@ -13,7 +13,8 @@
 
   <div class="field">
     <%= f.label :concepto %><br />
-    <%= f.select :concepto, Concepto.find(:all).collect{|t|[t.descripcion, t.id]} %>
+    <%= f.select :concepto_id, Concepto.find(:all).collect{|t|[t.descripcion, t.id]} %>
+
   </div>
   <div class="field">
     <%= f.label :mes %><br />
