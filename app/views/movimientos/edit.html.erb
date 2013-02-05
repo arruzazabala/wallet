@@ -1,6 +1,6 @@
-<h1>Editing movimiento</h1>
+<h1><%=I18n.t('.abc.edit') + ' ' +I18n.t('.abc.movimiento')%></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @movimiento %> |
-<%= link_to 'Back', movimientos_path %>
+<%= link_to I18n.t('.abc.show'), @movimiento %> |
+<%= link_to I18n.t('.abc.volver'), movimientos_path %>

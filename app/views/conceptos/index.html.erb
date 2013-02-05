@@ -15,13 +15,13 @@
     <td><%= concepto.descripcion %></td>
     <td><%= concepto.es_ingreso %></td>
     <td><%= concepto.es_egreso %></td>
-    <td><%= link_to 'Ver', concepto %></td>
-    <td><%= link_to 'Editar', edit_concepto_path(concepto) %></td>
-    <td><%= link_to 'Borrar', concepto, method: :delete, data: { confirm: 'Está seguro?' } %></td>
+    <td><%= link_to 'Show', concepto %></td>
+    <td><%= link_to 'Edit', edit_concepto_path(concepto) %></td>
+    <td><%= link_to 'Destroy', concepto, method: :delete, data: { confirm: 'Está seguro?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nuevo Concepto', new_concepto_path %>
+<%= link_to 'New Concepto', new_concepto_path %>

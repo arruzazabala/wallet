@@ -2,7 +2,7 @@ class MovimientosController < ApplicationController
   # GET /movimientos
   # GET /movimientos.json
   def index
-    @movimientos = Movimiento.all
+    @movimientos = Movimiento.order("anio DESC, mes DESC")
 
     respond_to do |format|
       format.html # index.html.erb

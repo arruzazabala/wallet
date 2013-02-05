@@ -1,7 +1,7 @@
 <%= form_for(@movimiento) do |f| %>
   <% if @movimiento.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@movimiento.errors.count, "error") %> prohibited this movimiento from being saved:</h2>
+      <h2><%= pluralize(@movimiento.errors.count, "error") +' '+ I18n.t('.abc.no_guarda')%>: </h2>
 
       <ul>
       <% @movimiento.errors.full_messages.each do |msg| %>
@@ -12,23 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :concepto %><br />
+    <%= f.label I18n.t('.abc.concepto') %><br />
     <%= f.select :concepto_id, Concepto.find(:all).collect{|t|[t.descripcion, t.id]} %>
-
   </div>
   <div class="field">
-    <%= f.label :mes %><br />
+    <%= f.label I18n.t('.abc.mes') %><br />
     <%= f.number_field :mes %>
   </div>
   <div class="field">
-    <%= f.label :anio %><br />
+    <%= f.label I18n.t('.abc.anio') %><br />
     <%= f.number_field :anio %>
   </div>
   <div class="field">
-    <%= f.label :monto %><br />
+    <%= f.label I18n.t('.abc.monto') %><br />
     <%= f.text_field :monto %>
   </div>
   <div class="actions">
-    <%=submit_tag "Guardar" %>
+    <%=f.submit%>
   </div>
 <% end %>

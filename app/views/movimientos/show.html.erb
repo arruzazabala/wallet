@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Concepto:</b>
+  <b><%=I18n.t('.abc.concepto') %>:</b>
   <%= @movimiento.concepto.descripcion %>
 </p>
 
 <p>
-  <b>Mes:</b>
+  <b><%=I18n.t('.abc.mes') %>:</b>
   <%= @movimiento.mes %>
 </p>
 
 <p>
-  <b>Anio:</b>
+  <b><%=I18n.t('.abc.anio') %>:</b>
   <%= @movimiento.anio %>
 </p>
 
 <p>
-  <b>Monto:</b>
+  <b><%=I18n.t('.abc.monto') %>:</b>
   <%= @movimiento.monto %>
 </p>
 
 
-<%= link_to 'Edit', edit_movimiento_path(@movimiento) %> |
-<%= link_to 'Back', movimientos_path %>
+<%= link_to I18n.t('.abc.edit'), edit_movimiento_path(@movimiento) %> |
+<%= link_to I18n.t('.abc.volver'), movimientos_path %>
